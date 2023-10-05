@@ -1,0 +1,45 @@
+/* Set font family and size */
+body {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+}
+
+/* Center the counter */
+.counter {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    height: 100vh;
+}
+
+/* Style the counter number */
+.counter h1 {
+    font-size: 10rem;
+    font-weight: bold;
+    color: #333;
+}
+
+#button {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+#button:hover {
+    background-color: #3e8e41;
+}
+
+#button:active {
+    background-color: #3e8e41;
+    transform: translateY(4px);
+}
+
+#button:focus {
+    outline: none;
+}
+
