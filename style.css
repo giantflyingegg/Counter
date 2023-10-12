@@ -5,41 +5,65 @@ body {
 }
 
 /* Center the counter */
-.counter {
+.container {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     text-align: center;
+    align-items: center;
     height: 100vh;
 }
 
-/* Style the counter number */
-.counter h1 {
-    font-size: 10rem;
+/* Style the header */
+h1 {
+    font-size: 7rem;
     font-weight: bold;
     color: #333;
 }
 
-#button {
+/* Style the counter */
+#counter {
+    font-size: 7rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+}
+
+/* Style the buttons */
+.button {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
     background-color: #4CAF50;
     border: none;
     color: white;
     padding: 15px 32px;
-    text-align: center;
     font-size: 16px;
     margin: 4px 2px;
     cursor: pointer;
+    width: 200px;
 }
 
-#button:hover {
+.button:hover {
     background-color: #3e8e41;
 }
 
-#button:active {
+.button:active {
     background-color: #3e8e41;
     transform: translateY(4px);
 }
 
 #button:focus {
     outline: none;
+}
+
+/* media query for mobile */    
+@media screen and (max-width: 480px) {
+    .counter h1 {
+        font-size: 6rem;
+    }
 }
 
